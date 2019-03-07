@@ -1,0 +1,26 @@
+/* pages/errorPage/errorPage.wxss */
+
+.error-wrapper{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.error-center{
+ position: absolute;
+ left: 50%;
+ top:40%;
+ transform: translate(-50%,-50%);
+ text-align: center;
+}
+.img-icon{
+  width: 290rpx;
+  height: 217rpx;
+}
+.text-icon{
+  display: block;
+  width: 100vw;
+  font-family: PingFangSC-Medium;
+font-size: 30rpx;
+color: #FFFFFF;
+margin-top: 44rpx;
+}

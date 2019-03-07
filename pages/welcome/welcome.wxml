@@ -1,0 +1,35 @@
+<view class='welcome' wx:if='{{dataList}}'>
+    <view class="list-wrapper" wx:for='{{dataList}}' style="height:{{item.switch==1?'600rpx':'150rpx'}}" >
+        <view class="welcomeList-title list-title flexBetween">
+            <view class="left">
+                <image src="/images/icon/profile_group.png"></image>
+                <text>{{item.name}}</text>
+            </view>
+            <view class='right launchSwitch' data-item="{{item}}" bindtap='changeSwitch' >
+                <view class="{{item.switch==1 ? 'bg open' : 'bg'}}">
+                    <text class="circle"></text>
+                </view>
+            </view>
+        </view>
+        <view class="cm-textarea" wx:if='{{item.switch===1}}'>
+            <view class="cm-textarea-content">
+                <textarea 
+                    wx:if='{{editStatus&&changeId===item.id}}'
+                    value="{{item.msg != null && item.msg !== undefined ? item.msg : ''}}"
+                    data-item='{{item}}' 
+                    bindinput='changeTextarea'
+                ></textarea>
+                <textarea wx:else value="{{item.msg != null && item.msg !== undefined ? item.msg : ''}}" disabled ></textarea>
+                <view class="ad_popError" wx:if="{{popErrorMsg&&changeId===item.id}}">{{popErrorMsg}}</view> 
+            </view>
+            <view class='cm-textarea-bottom'>
+                <view wx:if='{{editStatus&&changeId===item.id}}' class='extarea-operate'>
+                    <text class='cancelBtn' bindtap='handleCancelEdit'>取消</text>
+                    <text class='saveBtn' bindtap='handleSaveWelcom'>保存</text>
+                </view>
+                <image wx:else class='ic_edit' src="/images/icon/ic_edit.png" data-item='{{item}}' bindtap='handleEdit'></image>
+            </view>
+        </view>
+    </view>
+    <view class="welocme-des">*当群内有新人时，会自动发送欢迎语</view>
+</view>

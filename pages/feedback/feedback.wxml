@@ -1,0 +1,14 @@
+<!--pages/feedback/feedback.wxml-->
+<view class='feedback-wrapper'>
+  <view class="feedback-item flexBetween">
+    <view class="left">
+      <image class='kefu-icon' src='/images/profile_kefu.png'></image>
+    </view>
+    <view class="right">
+        <view class="name">{{feedbackData.name}}</view>
+        <view class="wechat-code">微信号：{{feedbackData.wechat_no}}</view>
+        <text class='des'>如在使用过程中遇到问题\n复制微信号添加好友即可咨询</text>
+        <image class='copyid-btn' data-code='{{feedbackData.wechat_no}}' src="/images/feedback_btn_copyID.png" bindtap='copyId'></image>
+    </view>
+  </view>
+</view>

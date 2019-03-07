@@ -1,0 +1,50 @@
+<!--pages/receiveDes/receiveDes.wxml-->
+<view class="des-wrapper">
+    <view class='des-content'>
+        <view class='des-content-title'>
+            <text class='line'></text>
+            <text class='word'>看门狗有什么用？</text>
+            <text class='line'></text>
+        </view>
+        <view class="des-content-features">
+            <view class='features-title'>
+                <text class='bgColor1'>功能一</text>
+                <text class='color1'>芝麻开门</text>
+            </view>
+            <view class='features-word'>
+                看门狗会替主人生成一张入群二维码，群内人数达到100人以上，依旧可以扫码入群
+                <view class='color1'>二维码有效期：1万年</view>
+            </view>
+            <view class='features-img textCenter'>
+                <image src='/images/pic/pic_1.png' style='width: 513rpx;height: 690rpx;margin-bottom: 57rpx;'></image>
+                <image src='/images/pic/pic_2.png' style='width: 513rpx;height: 424rpx;'></image>
+            </view>
+        </view>
+        <view class="des-content-features">
+            <view class='features-title'>
+                <text class='bgColor1'>功能二</text>
+                <text class='color1'>汪汪看家</text>
+            </view>
+            <view class='features-word'>
+                看门狗全天无休，当群里有人偷偷散播小广告时，看门狗就会对他不客气哦！
+            </view>
+            <view class='features-img textCenter'>
+                <image src='/images/pic/pic_3.png' style='width: 513rpx;height: 560rpx;margin-bottom: 57rpx;'></image>
+            </view>
+        </view>
+        <view class="des-content-features">
+            <view class='features-title'>
+                <text class='bgColor1'>功能三</text>
+                <text class='color1'>智能拦截</text>
+            </view>
+            <view class='features-word'>
+                看门狗很聪明，如果遇到其他微信群有劣迹的坏人或广告机器人，看门狗会主动把他拦在群外！
+            </view>
+        </view>
+    </view>    
+    <view class='des-btn textCenter'>
+        <button open-type="contact" show-message-card='true' send-message-title='看门狗' send-message-img='/images/pic/mini_program_cover.png'>
+            <image src="/images/page_btn_get.png"></image>
+        </button>
+    </view>
+</view>

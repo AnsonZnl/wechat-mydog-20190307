@@ -1,0 +1,48 @@
+<!--pages/admonitor/admonitor.wxml-->
+<view class='admonitor' wx:if='{{dataList}}'>
+    <view class="list-wrapper" wx:for='{{dataList}}' style="height:{{item.switch==1?'600rpx':'150rpx'}}" >
+        <view class="list-title flexBetween">
+            <view class="left">
+                <text>{{item.name}}</text>
+            </view>
+            <view class='right launchSwitch' data-item="{{item}}" bindtap='changeSwitch' >
+                <view class="{{item.switch==1 ? 'bg open' : 'bg'}}">
+                    <text class="circle"></text>
+                </view>
+            </view>
+        </view>
+        <view class="cm-textarea" wx:if='{{item.switch===1}}'>
+            <view wx:if='{{!modal}}' class="cm-textarea-content">
+                <textarea 
+                    wx:if='{{editStatus&&changeId===item.id}}'
+                    value="{{item.msg != null && item.msg !== undefined ? item.msg : ''}}"
+                    data-item='{{item}}' 
+                    bindinput='changeTextarea'
+                ></textarea>
+                <textarea wx:else value="{{item.msg != null && item.msg !== undefined ? item.msg : ''}}" disabled ></textarea>
+            </view>
+            <view class='cm-textarea-bottom'>
+                <view wx:if='{{editStatus&&changeId===item.id}}' class='extarea-operate'>
+                    <text class='cancelBtn' bindtap='handleCancelEdit'>取消</text>
+                    <text class='saveBtn' bindtap='handleSaveWelcom'>保存</text>
+                </view>
+                <image wx:else class='ic_edit' src="/images/icon/ic_edit.png" data-item='{{item}}' bindtap='handleEdit'></image>
+            </view>
+        </view>
+    </view>
+    <view class="admonitor-des">
+        <image src='/images/icon/ic_liaojie.png'></image>
+        <text bindtap='showModal'>了解详情</text>
+    </view>
+    <view class='modalWrapper' wx:if='{{modal}}'>
+        <view class="modalBox descripModal">
+            <view class="modalTitle">广告监测</view>
+            <view class="content">
+                <view class='des'>开通该功能后，看门狗会监测群内垃圾广告，一旦出现散发小广告的坏人，看门狗将立即@他要求撤回。注：文案也可由主人个性化定制。</view>
+                <image class='img' src='/images/pic/pic_4.png'></image>
+                <view class='des'>广告监测功能由大数据算法智能，看门狗对广告的识别会越来越准确哦～</view>
+            </view>
+            <view class="icon-cross closeBtn" bindtap='hideModal'></view>
+        </view>
+    </view>
+</view>

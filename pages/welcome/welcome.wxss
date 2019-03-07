@@ -1,0 +1,22 @@
+/* pages/welcome/welcome.wxss */
+.welcomeList-title .left image{
+    width: 80rpx;
+    height: 80rpx;
+    vertical-align: middle;
+    margin-right: 23rpx;
+}
+.welcomeList-title .left text{
+    font-family: PingFangSC-Medium;
+    font-size: 34rpx;
+    color: #333333;
+}
+.welocme-des{
+    margin: 20rpx 50rpx;
+    margin-bottom: 50rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    color: #999999;
+}
+
+
+

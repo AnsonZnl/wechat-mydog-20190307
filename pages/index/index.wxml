@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='home-header-box'>
+    <image class='title-bg' src="/images/pic/title_bg.png"></image>
+    <view class="header-content">
+      <image class="header-avatarurl" src="{{receiveStatus==1?receiveDog.head_url:'/images/profile_dog.png'}}"></image>
+      <text class="header-nickname textStyle">{{receiveStatus==1?receiveDog.robot_name:'看门狗'}}</text>
+    </view>
+    <view class='home-header'>
+      <view class="home-header-des flexBetween" wx:if='{{!receiveStatus==1}}'>
+        <view class="left">
+            <view class="left-top">
+              <text class="color1">智能看门狗</text>帮你拉人
+            </view>
+            <view class="left-buttom">
+              <text>永久入群</text>
+              <text>限时免费</text>
+            </view>
+        </view>
+        <view class='right user-info-box'>
+            <button wx:if='{{!hasUserInfo}}' class='hidden-button' open-type='getUserInfo' bindgetuserinfo="getUserInfo"></button>
+            <image class='home_btn_get' src="/images/home_btn_get.png" bindtap="pageGoDes"></image>
+        </view>
+      </view>
+      <view class="home-header-qrcode" wx:else>
+        <image src="/images/home_ic_qrcode.png" bindtap='pageGoQrcode'></image>
+      </view>
+    </view>
+  </view>
+  <view class='home-content-box'>
+    <view class='content-title'>群管理服务</view>
+    <view class='content-tab'>
+      <view class="row">
+        <view wx:if='{{!hasUserInfo}}' class='column {{item.event}} user-info-box' wx:for='{{homeTab}}'>
+          <button class='hidden-button' open-type='getUserInfo' bindgetuserinfo="getUserInfo"></button>
+          <image wx:if='{{item.event=="home_ad"}}' class="qipao" src='/images/icon/home_tag.png'></image>
+          <image src="{{item.imgSrc}}"></image>
+          <text>{{item.text}}</text>
+        </view>
+        <view wx:if='{{hasUserInfo}}' class='column {{item.event}}' wx:for='{{homeTab}}' data-tab='{{item.goLink}}' data-event='{{item.event}}' bindtap='handlepageGo'>
+          <image wx:if='{{item.event=="home_ad"}}' class="qipao" src='/images/icon/home_tag.png'></image>
+          <image src="{{item.imgSrc}}"></image>
+          <text>{{item.text}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  
+
+  
+</view>

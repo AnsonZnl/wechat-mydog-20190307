@@ -1,0 +1,67 @@
+/* pages/receiveDes/receiveDes.wxss */
+.des-content{
+    margin: 20rpx;
+    background: #FFFFFF;
+    border-radius: 10rpx;
+    padding: 60rpx 40rpx 120rpx 40rpx;
+}
+.des-content-title {
+    text-align: center;
+}
+.des-content-title .line{
+    display: inline-block;
+    width: 32rpx;
+    height: 6rpx;
+    vertical-align: middle;
+    margin: 0 20rpx;
+    background:#2ABE76;
+}
+.des-content-title .word{
+    font-family: PingFangSC-Medium;
+    font-size: 34rpx;
+    color: #333333;
+    margin: 0 30rpx;
+}
+.des-content-features{
+    margin-top:55rpx; 
+}
+.features-title{
+    width: 290rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    border: 1rpx solid #2ABE76;
+    border-radius: 10rpx;
+     font-family: PingFangSC-Semibold;
+     font-size: 30rpx;
+}
+.features-title text{
+    display: inline-block;
+     text-align: center;
+      padding: 0rpx 20rpx;
+
+}
+.features-title text:nth-child(1){
+    color: #FFFFFF;
+    border-radius: 11rpx ;
+}
+.features-word{
+    font-family: PingFangSC-Regular;
+    font-size: 30rpx;
+    color: #333333;
+    margin-top: 32rpx;
+    margin-bottom: 30rpx;
+    line-height: 46rpx;
+}
+.features-word view{
+    font-family: PingFangSC-Medium;
+}
+.des-btn image{
+     margin: 30rpx auto;
+    width: 368rpx;
+    height: 100rpx;
+}
+.des-btn button{
+    color:#fff;
+background-color:transparent;
+
+}

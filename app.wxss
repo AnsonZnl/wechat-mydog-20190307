@@ -1,0 +1,257 @@
+/**app.wxss**/
+::-webkit-scrollbar {
+    display: none
+}
+button {
+   background-color: transparent;
+   border-radius:0;
+   -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+button::after {
+  border: none;
+}
+
+page {
+  width: 100%;
+  overflow-x: hidden;
+  background: #F3F3F3;
+}
+.bgColor1{
+  background: #2ABE76;
+}
+.color1{
+  color: #23AC6A;
+}
+.textCenter{
+  text-align: center;
+}
+.textStyle{
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #FFFFFF;
+}
+.flexBetween{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*全局错区提示信息样式*/
+.ad_popError {
+    z-index: 999;
+    position: absolute;
+    font-size: 28rpx;
+    /* width: 600rpx; */
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    color: #fff;
+    background: rgba(0, 0, 0, .7);
+}
+/*textarea begin*/
+.list-wrapper{
+    margin: 20rpx;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 10rpx;
+    transition: all ease-in-out .3s;
+}
+.list-title{
+  height: 150rpx;
+}
+.cm-textarea{
+    width:100%;
+    border-top:1rpx solid #DADEE2;
+    transition: all ease-in-out .2s;
+}
+.cm-textarea-content{
+   position: relative;
+  width: 100%;
+   height: 350rpx;
+}
+.cm-textarea-content textarea {
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #333333;
+    display: block;
+    width:100%;
+    height: 340rpx;
+    box-sizing: border-box;
+    overflow: auto;
+    margin-bottom: 0;
+    word-break: break-all;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* z-index: 2; */
+    resize: none;
+    padding: 30rpx 0;
+}
+.cm-textarea-bottom {
+    display: flex;
+    justify-content:flex-end;
+}
+.cm-textarea-bottom .ic_edit{
+    width: 44rpx;
+    height: 44rpx;
+}
+.cm-textarea-bottom .extarea-operate .cancelBtn,
+.cm-textarea-bottom .extarea-operate .saveBtn{
+  display: inline-block;
+  width: 116rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+.cm-textarea-bottom .extarea-operate .cancelBtn{
+  font-family: PingFangSC-Regular;
+  color: #999999;
+}
+.cm-textarea-bottom .extarea-operate .saveBtn{
+  border: 1rpx solid #2ABE76;
+  border-radius: 30rpx;
+  font-family: PingFangSC-Medium;
+  color: #2ABE76;
+}
+/*textarea end*/
+
+
+/*switch css效果*/
+.launchSwitch{
+     font-family: PingFangSC-Regular;
+    font-size: 30rpx;
+    color: #999999;
+    display: flex;
+}
+.launchSwitch .bg {
+    background: #BEBEBE;
+    border: 1rpx solid #BEBEBE;
+    border-radius: 25rpx;
+    width: 76rpx;
+    height: 46rpx;
+}
+
+.launchSwitch .bg .circle {
+    background: #FFFFFF;
+    box-shadow: 0 2rpx 4rpx 0 rgba(0, 0, 0, 0.13);
+    float: left;
+    transition: all ease-in-out .3s;
+    width: 42rpx;
+    height: 42rpx;
+    border-radius: 25rpx;
+    margin: 3rpx;
+}
+
+.launchSwitch .bg.open {
+    background: #2ABE76;
+    border: 1rpx solid #2ABE76;
+}
+
+.launchSwitch .bg.open .circle {
+    margin-left: 31rpx;
+}
+/* end */
+/* modal 框 begin */
+.modalWrapper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1999;
+}
+.modalWrapper .modalBox {
+    -webkit-animation: hint 0.2s linear;
+    animation: hint 0.2s linear;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+@keyframes hint {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+.modalWrapper .descripModal {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 20rpx;
+    width: 670rpx;
+    height: 900rpx;
+    padding: 40rpx;
+    white-space:normal;
+    overflow-y: scroll;
+}
+.modalWrapper .descripModal .modalTitle {
+    font-family: PingFangSC-Medium;
+    font-size: 34rpx;
+    color: #333333;
+    padding-bottom: 30rpx;
+    text-align: center;
+}
+.modalWrapper .descripModal .content {
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #333333;
+    text-align: center;
+}
+.modalWrapper .descripModal .content .des{
+  text-align: left;
+  white-space:normal;
+}
+.modalWrapper .descripModal .closeBtn {
+    right: 20rpx;
+    top: 10rpx;
+}
+.icon-cross {
+    width: 70rpx;
+    height: 70rpx;
+    position: absolute;
+}
+.icon-cross::before, .icon-cross::after {
+    content: "";
+    position: absolute;
+    height: 46rpx;
+    top: 12rpx;
+    right: 33rpx;
+    width: 4rpx;
+    background: #C2C2C2;
+}
+.icon-cross::before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.icon-cross::after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+/* modal 框 end */
+/* 授权隐藏按钮 begin */
+.user-info-box{
+  position: relative;
+}
+.hidden-button{
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity:0;
+}
+

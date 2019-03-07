@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/welcome/welcome",
+    "pages/qrcode/index",
+    "pages/admonitor/admonitor",
+    "pages/receiveDes/receiveDes",
+    "pages/feedback/feedback",
+    "pages/errorPage/errorPage",
+    "pages/footer/footer"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2ABE76",
+    "navigationBarTitleText": "看门狗",
+    "navigationBarTextStyle": "white"
+  }
+}

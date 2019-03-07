@@ -1,0 +1,29 @@
+/* pages/admonitor/admonitor.wxss */
+.list-title .left text{
+    font-family: PingFangSC-Medium;
+    font-size: 34rpx;
+    color: #333333;
+}
+.admonitor-des{
+    margin: 0 auto;
+    text-align: center;
+    margin: 20rpx 50rpx;
+    margin-bottom: 50rpx;
+    padding-bottom: 50rpx;
+}
+.admonitor-des image{
+    width: 32rpx;
+    height: 32rpx;
+    vertical-align: middle;
+    margin-right: 10rpx;
+}
+.admonitor-des text{
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    color: #2ABE76;
+}
+.admonitor .modalWrapper .content .img{
+    width: 512rpx;
+    height: 720rpx;
+    margin: 30rpx auto;
+}

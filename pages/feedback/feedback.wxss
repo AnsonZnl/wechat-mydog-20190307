@@ -1,0 +1,50 @@
+/* pages/feedback/feedback.wxss */
+.feedback-wrapper{
+  width: 100vw;
+  height: 100vh;
+  background: #2ABE76;
+  padding: 50rpx 20rpx;
+  box-sizing: border-box;
+}
+.feedback-item{
+   box-sizing: border-box;
+  width: 710rpx;
+  height: 440rpx;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 20rpx 0 rgba(0,0,0,0.07);
+  border-radius: 20rpx;
+  padding: 50rpx 40rpx;
+  margin-bottom: 30rpx;
+}
+.feedback-item .left{
+  margin-right: 30rpx;
+  height:340rpx ;
+}
+.feedback-item .kefu-icon{
+  width: 130rpx;
+  height: 130rpx;
+}
+.feedback-item .name{
+  font-family: PingFangSC-Medium;
+font-size: 38rpx;
+color: #333333;
+margin-top: 13rpx;
+}
+.feedback-item .wechat-code{
+  font-family: PingFangSC-Regular;
+font-size: 30rpx;
+color: #333333;
+}
+.feedback-item .des{
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #B0ADAD;
+  margin-top: 20rpx;
+  margin-bottom: 52rpx;
+}
+.feedback-item .copyid-btn{
+  width: 226rpx;
+  height: 70rpx;
+  margin-left:40rpx; 
+}
