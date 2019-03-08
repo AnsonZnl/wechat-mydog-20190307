@@ -1,0 +1,4 @@
+/* pages/component/numComponent/numComponent.wxss */
+.goods-num{
+  margin:0 20rpx;
+}

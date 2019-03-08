@@ -7,11 +7,11 @@ const API = require('./utils/api')
 App({
   onLaunch: function () {
     // 微信预登陆
-    wx.login({
-      success: function (e) {
-        // console.log("登录成功");
-      }
-    })
+    // wx.login({
+    //   success: function (e) {
+    //     // console.log("登录成功");
+    //   }
+    // })
   },
   globalData: {
     userInfo: null,

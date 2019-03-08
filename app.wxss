@@ -10,7 +10,14 @@ button {
 button::after {
   border: none;
 }
-
+.buttonStyle{
+  width: 300rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border: 1rpx solid #2ABE76;
+  border-radius: 10rpx;
+}
 page {
   width: 100%;
   overflow-x: hidden;

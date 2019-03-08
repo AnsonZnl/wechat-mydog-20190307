@@ -1,0 +1,10 @@
+<!--pages/component/componentA/componentA.wxml-->
+<!-- A是父组件，B是子组件 ,引入子组件-->
+<view>我是父组件</view>
+<view>{{paramBtoA}}</view>
+<view>
+   <view>子组件内容：</view>
+   <componentB paramAtoB='我是A向B中传入的参数,父传子'
+   bind:myevent='onMyEvent'
+   />
+</view>

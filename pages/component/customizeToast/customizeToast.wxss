@@ -1,0 +1,92 @@
+/* pages/component/customizeToast/customizeToast.wxss */
+
+/* modal 框 begin */
+.modalWrapper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1999;
+}
+.modalWrapper .modalBox {
+    -webkit-animation: hint 0.2s linear;
+    animation: hint 0.2s linear;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+@keyframes hint {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+.modalWrapper .descripModal {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 20rpx;
+    width: 670rpx;
+    height: 900rpx;
+    padding: 40rpx;
+    white-space:normal;
+    overflow-y: scroll;
+}
+
+.new-promptBox{
+    width: 552rpx;
+  height: 288rpx;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #333333;
+  text-align: center;
+}
+.new-promptBox .title {
+  height: 182rpx;
+  line-height: 182rpx;
+}
+.new-promptBox .title .title-prompt{
+   font-size: 36rpx;
+   padding: 30rpx 0;
+}
+.new-promptBox .title .title-des{
+    font-size: 30rpx;
+    color: #B0ADAD;
+}
+.new-promptBox .promptBtnBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1rpx solid #DADEE2;
+}
+.new-promptBox .promptBtnBox .cancelBtn,
+.new-promptBox .promptBtnBox .confrimBtn {
+    display: block;
+    height: 105rpx;
+    line-height: 105rpx;
+    flex: auto;
+    font-size: 32rpx;
+    font-family: PingFangSC-Regular;
+}
+
+.new-promptBox .promptBtnBox .line{
+    width: 1px;
+     height: 105rpx;
+    line-height: 105rpx;
+    background: #DADEE2;
+}
+.new-promptBox button.confrimBtn{
+    color: #2ABE76;
+    padding: 0;
+    background-color:transparent;
+}

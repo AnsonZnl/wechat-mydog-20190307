@@ -14,6 +14,7 @@ Page({
     ],
     receiveStatus: null,// 0表示未领取机器人，1表示已领取
     receiveDog:{},
+    num:1
   },
   onLoad:function (params) {
     console.log('onLoad')
@@ -33,7 +34,6 @@ Page({
             receiveStatus: res.data.status,
             hasUserInfo:true
           })
-          console.log(self.data.receiveDog)
         }
 
       })
@@ -44,17 +44,8 @@ Page({
     }
   },
   pageGoQrcode:function () {
-
     let group_code = this.data.receiveDog.group_code
-    console.log(group_code, 'group_code=====')
     utils.pageGo('/pages/qrcode/index?group_code=' + group_code, 1)
-    // let unionId = wx.getStorageSync('union_id')
-    // if (unionId) {
-    //   user_status(unionId).then(res => {
-    //     let group_code = res.data.group_code
-    //     utils.pageGo('/pages/qrcode/index?group_code=' + group_code, 1)
-    //   })
-    // }
   },
   pageGoDes:function (params) {
     utils.pageGo('/pages/receiveDes/receiveDes',1)
@@ -99,6 +90,10 @@ Page({
       path: '/pages/index/index', // 分享路径
       imageUrl: '/images/pic/mini_program_cover.png'//分享图片
     }
+  },
+  numChange(e){
+    // console.log(e)
+    const numi = e.detail;
   }
 })
 

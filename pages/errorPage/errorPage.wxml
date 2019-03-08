@@ -1,7 +1,4 @@
 <!--pages/errorPage/errorPage.wxml-->
-<view class='error-wrapper bgColor1'>
- <view class='error-center'>
-  <image class='img-icon' src='/images/pic/pic_404.png'></image>
-  <text class='text-icon'>主人还未将看门狗拉入微信群\n无法体验相关功能</text>
-  </view>
-</view>
+<componentC type="{{3}}" my-class='red-text'></componentC>
+
+

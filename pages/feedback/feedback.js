@@ -9,9 +9,7 @@ Page({
   /**
   * 生命周期函数--监听页面加载
   */
-  onLoad: function (options) {
-    console.log('onLoad');
-    
+  onLoad: function (options) { 
     feed_back().then(res => {
       if (res.code == 1200) {
         this.setData({

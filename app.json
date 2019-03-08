@@ -7,7 +7,11 @@
     "pages/receiveDes/receiveDes",
     "pages/feedback/feedback",
     "pages/errorPage/errorPage",
-    "pages/footer/footer"
+    "pages/footer/footer",
+    "pages/component/errorComponent/error",
+    "pages/component/componentA/componentA",
+    "pages/component/componentB/componentB",
+    "pages/qrcode/wxm2canvas/wxm2canvas"
   ],
   "window": {
     "backgroundTextStyle": "light",

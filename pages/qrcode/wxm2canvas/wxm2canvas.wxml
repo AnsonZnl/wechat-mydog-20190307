@@ -1,0 +1,37 @@
+<!-- 
+  1. wrapper id
+  2. 需要绘制的元素 className
+  3. 如果是文本，需要给元素添加加 data-text 属性 
+ -->
+<!-- <view class="container" id="wrapper">
+  <text class="title draw" data-text="Hello there">Hello there</text>
+  <text class="info draw" data-text="小程序是一种新的开放能力，开发者可以快速地开发一个小程序。">
+   小程序是一种新的开放能力，开发者可以快速地开发一个小程序。
+  </text>
+  <view class="image-wrapper draw">
+    <image class="draw" src="/images/qcode.jpg"/>
+  </view>
+  
+  <button class="generate-btn buttonStyle" bindtap="drawCanvas">generate</button>
+</view>
+<canvas canvas-id="canvas-map" class="share-canvas"></canvas> -->
+
+<view class="qrcode-wrapper" id='wrapper'>
+  <view class="qrcode-content draw" wx:if='{{view}}'>
+    <view class="qrcode-title draw">
+      <image class='group-icon draw' src="/images/icon/profile_group.png"></image>
+      <view class='group-word draw'>
+        <view class="name draw" data-text='懒惰的穷人分享群'>懒惰的穷人分享群</view>
+        <view class="des draw" data-text='扫一扫二维码，加入群聊'>扫一扫二维码，加入群聊</view>
+      </view>
+    </view> 
+    <view class="qrcode-img draw">
+      <image src="/images/qcode.jpg" class='qrcode draw'></image>
+    </view>
+  </view> 
+  <cover-view wx:if='{{btnStatus}}'style='z-index: 9999;' class='downBtn' bindtap='drawCanvas'>下载群二维码</cover-view>
+  <!-- <canvas canvas-id="myQrcode" style="width: 250px;height: 250px;position:fixed;top:-1000px;left:-1000px"></canvas>
+  <canvas canvas-id="groupQrcode" style="width: 320px;height: 468px;"></canvas> -->
+  <canvas canvas-id="canvas-map" class='share-canvas' style='height: 468px;position: absolute;top:{{view?"-1000px":"0"}};left:{{view?"-1000px":"0"}};'></canvas>
+
+</view>

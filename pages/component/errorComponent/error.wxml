@@ -1,0 +1,10 @@
+<!--pages/component/errorComponent/error.wxml-->
+<view class='error-wrapper bgColor1'>
+ <view class='error-center'>
+  <image class='img-icon' src='/images/pic/pic_404.png'></image>
+  <text wx:if='{{type===1}}' class='text-icon'>主人还未将看门狗拉入微信群\n无法体验相关功能</text>
+  <view wx:elif='{{type===2}}' class='my-class'>2</view>
+  <view wx:else>3</view>
+  </view>
+</view>
+

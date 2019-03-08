@@ -2,17 +2,5 @@
   <canvas canvas-id="myQrcode" style="width: 250px;height: 250px;position:fixed;top:-1000px;left:-1000px"></canvas>
   <canvas canvas-id="groupQrcode" style="width: 320px;height: 468px;background: #fff"></canvas>
   <cover-view class='downBtn' bindtap='downloadQrcode' style='z-index:99999'>下载群二维码</cover-view>
-  <cover-view wx:if='{{openSet}}' class='modalWrapper'>
-    <cover-view class="modalBox new-promptBox">
-      <cover-view class='title'>
-        <cover-view class='title-prompt'>温馨提示</cover-view>
-        <cover-view class='title-des'>您已拒绝授权，是否去设置打开？</cover-view>
-      </cover-view>
-      <cover-view class='promptBtnBox'>
-        <cover-view class='cancelBtn' catchtap='cancleSet'>取消</cover-view>
-        <cover-view class='line'></cover-view>
-        <button class='confrimBtn' open-type='openSetting' catchtap='cancleSet'>确定</button>
-      </cover-view>
-    </cover-view>
-  </cover-view>
+  <customizeToast wx:if='{{openSet}}' des='您已拒绝授权，是否去设置打开？' bindcancleSet='cancleSet'/>
 </view>

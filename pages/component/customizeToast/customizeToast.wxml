@@ -1,0 +1,14 @@
+<!--pages/component/customizeToast/customizeToast.wxml-->
+<cover-view class='modalWrapper'>
+  <cover-view class="modalBox new-promptBox">
+    <cover-view class='title'>
+      <cover-view class='title-prompt'>温馨提示</cover-view>
+      <cover-view class='title-des'>{{des}}</cover-view>
+    </cover-view>
+    <cover-view class='promptBtnBox'>
+      <cover-view class='cancelBtn' catchtap='cancleSet'>取消</cover-view>
+      <cover-view class='line'></cover-view>
+      <button class='confrimBtn' open-type='openSetting' catchtap='cancleSet'>确定</button>
+    </cover-view>
+  </cover-view>
+</cover-view>

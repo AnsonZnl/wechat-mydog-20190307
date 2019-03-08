@@ -1,0 +1,6 @@
+<!--pages/component/numComponent/numComponent.wxml-->
+<view class="num-controller">
+  <text class="iconfont icon-jianshao sub-btn" hidden="{{num<1}}" bindtap="sub">-</text>
+  <text class="goods-num">{{num}}</text>
+  <text class="iconfont icon-zengjia add-btn" bindtap="add">+</text>
+</view>

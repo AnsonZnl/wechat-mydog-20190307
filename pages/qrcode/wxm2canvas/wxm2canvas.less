@@ -1,0 +1,96 @@
+page {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.container .title {
+  font-size: 36px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.container .info {
+  font-size: 14px;
+  line-height: 18px;
+  color: grey;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.container .image-wrapper image {
+  width: 430rpx;
+  height: 430rpx;
+  margin: 0 auto;
+}
+.generate-btn {
+  margin-top: 40px;
+}
+.share-canvas {
+  width:100%;
+  // height: 100%;
+  background: transparent;
+}
+
+// ------
+.qrcode-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  position: relative;
+}
+.qrcode-content {
+  position: absolute;
+  left: 50%;
+  top:90rpx;
+  transform: translate(-50%);
+}
+.qrcode-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.qrcode-title .group-icon {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 30rpx;
+}
+.group-word .name {
+  font-family: PingFangSC-Medium;
+  font-size: 38rpx;
+  color: #333333;
+  margin-bottom: 10rpx;
+}
+.group-word .des {
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #7F7F7F;
+}
+.qrcode-img {
+  padding-top: 57rpx;
+  padding-left: 35rpx;
+}
+.qrcode-img .qrcode {
+  width: 500rpx;
+  height: 500rpx;
+}
+
+.downBtn{
+    position: absolute;
+    bottom:128px;
+    left: 50%;
+    transform: translate(-50%);
+   width: 260rpx;
+   height: 80rpx;
+   text-align: center;
+   line-height: 80rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 30rpx;
+    color: #FFFFFF;
+    background: #2ABE76;
+    border-radius: 40rpx;
+}

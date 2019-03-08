@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "父子传值",
+  "usingComponents": {
+   "componentB": "../componentB/componentB"
+  }
+}

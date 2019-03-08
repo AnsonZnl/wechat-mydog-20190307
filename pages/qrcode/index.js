@@ -125,7 +125,9 @@ Page({
     })
   },
   // 授权
-  cancleSet() {
+  cancleSet(e) {
+    console.log(e)
+
     this.setData({
       openSet: false
     })

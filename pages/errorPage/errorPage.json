@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "componentC":"../component/errorComponent/error"
+  }
 }

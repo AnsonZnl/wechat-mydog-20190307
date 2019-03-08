@@ -45,8 +45,8 @@
       </view>
     </view>
   </view>
-
-  
-
-  
+  <numComponent num="{{num}}" bindnumChange='numChange'/>
+  <view class='less-father'>
+    <text class='child'>child</text>
+  </view>
 </view>

@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
@@ -49,7 +49,7 @@
 					"id": 1,
 					"name": "qrcode",
 					"pathName": "pages/qrcode/index",
-					"query": "group_code="
+					"query": "group_code=445EFC80384701C2DF0E43F2622A16B7"
 				},
 				{
 					"id": -1,
